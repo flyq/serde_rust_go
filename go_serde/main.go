@@ -10,7 +10,7 @@ import (
 type signatureContent struct {
 	TokenType string `json:"token_type"`
 	Price     uint64 `json:"price"`
-	TimeStamp uint64 `json:"time_stamp"`
+	TimeStamp uint64 `json:"timestamp"`
 }
 
 func main() {
@@ -21,5 +21,5 @@ func main() {
 	}
 	msg, _ := json.Marshal(content)
 	fmt.Println("msg bytes:", msg)
-	fmt.Println("msg:", hexutil.Encode(msg))
+	fmt.Println("msg in hex:", hexutil.Encode(msg))
 }
