@@ -10,7 +10,7 @@ import (
 type signatureContent struct {
 	TokenType string `json:"token_type"`
 	Price     uint64 `json:"price"`
-	TimeStamp uint64 `json:"timestamp"`
+	TimeStamp uint64 `json:"time_stamp"`
 }
 
 func main() {
